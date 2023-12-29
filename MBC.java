@@ -1,9 +1,10 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class MBC {
     // Instance Variables:
-    private double alpha;
-    int[] classProbabilities;
+    private double alpha; // Laplace Smoothing
+    private int[] classProbabilities;
+    private HashMap<Integer, Double> wordProbabilities;
     
 
 
