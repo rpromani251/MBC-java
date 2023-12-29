@@ -61,16 +61,8 @@ public class CountVectorizer {
         return encodedDoc;
     }
 
-    public static void main(String[] args) {
-        String[] document = {"One Geek helps Two Geeks", "Two Geeks help Four Geeks", "Each Geek helps many other Geeks at GeeksforGeeks"};
-        CountVectorizer vectorizer = new CountVectorizer();
-        vectorizer.fit(document);
-
-        System.out.println(vectorizer.vocabulary);
-
-        int[][] vector = vectorizer.transform(document);
-        System.out.println(Arrays.deepToString(vector));
+    // Getter for Vocabulary:
+    public HashMap<String, Integer> getVocab() {
+        return vocabulary;
     }
-
-
 }
